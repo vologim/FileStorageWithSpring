@@ -1,0 +1,17 @@
+package com.golovackii.FileStorage;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@SpringBootApplication
+@EntityScan("com.golovackii.FileStorage.model")
+@EnableJpaRepositories("com.golovackii.FileStorage.repository")
+public class FileStorageApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FileStorageApplication.class, args);
+	}
+
+}
